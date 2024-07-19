@@ -7,7 +7,7 @@ const placeSchema = new Schema({
   location: { type: String, required: true },
   description: { type: String, required: true },
   image: { type: String, required: true },
-  mapURL: { type: String, required: true },
+  mapURL: { type: String },
 });
 
 const Place = mongoose.models.Place || mongoose.model("Place", placeSchema);
